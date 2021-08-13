@@ -9,21 +9,66 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Fira Sans', sans-serif;
+    background-color: rgb(252, 246, 238);
+    background-image: url('waves.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom; 
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    text-align: right;
+}
+
+.tabla-plataformas {
+    width: 100%;
+}
+
+.tabla-plataformas td:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tabla-plataformas__header-left{
+    text-align: left;
+}
+
+.tabla-plataformas__header-right{
+    text-align: right;
+}
+
+.fila-cine {
+    display: flex;
+    justify-content: space-between;
 }
 
 .main {
-    max-width: 600px;
+    background:  linear-gradient(180deg, rgb(248, 173, 74) 20%, rgba(255,255,255, 0.25) 100%);
+    padding: 21px;
+    border-radius: 5px;
+    max-width: 500px;
 }
+
 .titulo {
     margin-bottom: 7px;
 }
 
 .btn {
     margin-top: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 100%;
 }
 
 .form-element {
     margin: 5px;
+}
+
+.mensaje {
+    min-height: 2em;
 }
