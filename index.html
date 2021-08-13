@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>JS Challenge | Reto 1</title>
+</head>
+<body>
+    <main class="main">
+        <h1 class="titulo">Calculadora del cinéfilo empedernido</h1>
+        <form id="formulario">
+            <p>
+                <label for="PeliculasPorMes">¿Cuantas películas ves al mes?</label>
+                <input id="PeliculasPorMes" type="number" required min="1">
+            </p>
+            
+            <p>
+                <label for="CostoPorBoleto">Costo de entrada al cine</label>
+                <input id="CostoPorBoleto" type="number" required min="1">
+            </p>
+
+            <section class="plataformas">
+                <p>Elige las plataformas en las que están disponibles estas películas</p>
+                <p>
+                    <input type="checkbox" id="Netflix">
+                    <label for="Netflix">Netflix $139</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="HBOMax">
+                    <label for="HBOMax">HBO Max $99</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="Amazon">
+                    <label for="Amazon">Amazon Prime $99</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="DisneyPlus">
+                    <label for="DisneyPlus">Disney Plus $159</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="Apple">
+                    <label for="Apple">Apple TV $69</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="Claro">
+                    <label for="Claro">ClaroVideo $115</label>
+                </p>
+            </section>
+            <button id="BotonEnviar" class="btn" type="button" onclick="">¡Dime por favor en dónde me sale mas barato!</button>
+        </form>
+        <p id="Mensaje"></p>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
